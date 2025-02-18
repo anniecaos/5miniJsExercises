@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color flipper</title>
+    <style>
+
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        
+       }
+
+        button {
+            padding: 0.5em;
+            border-radius: 5px;
+            border-color: rgb(62, 64, 62);
+            width: 80px;
+            height: 30px;
+        }
+
+        #green {
+            background-color: rgb(10, 183, 10);
+            padding: 0.5em;
+            border-radius: 5px;
+            border-color: rgb(6, 121, 6);
+            width: 80px;
+        }
+
+        #blue {
+            background-color: rgb(50, 10, 183);
+            padding: 0.5em;
+            border-radius: 5px;
+            border-color: rgb(24, 5, 87);
+            width: 80px;
+        }
+
+        #red {
+            background-color: rgb(216, 13, 13);
+            padding: 0.5em;
+            border-radius: 5px;
+            border-color: rgb(125, 8, 8);
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3>Color picker!</h3>
+
+    <button id="red" onclick="setColor('red')">Red</button>
+    <button id="blue" onclick="setColor('blue')">Blue</button>
+    <button id="green"onclick="setColor('green')">Green</button>
+    <button id="random" onclick="randomColor('color')">Random</button>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
